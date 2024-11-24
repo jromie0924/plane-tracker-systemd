@@ -1,0 +1,14 @@
+[Unit]
+Description=Plane Tracker Service
+
+
+[Service]
+Type=simple
+RemainAfterExit=no
+ExecStart=/home/jackson/plane-tracker-rgb-pi/scripts/start-tracker.sh
+Restart=no
+User=jackson
+Group=jackson
+
+[Install]
+WantedBy=multi-user.target
