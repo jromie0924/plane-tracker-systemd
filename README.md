@@ -5,4 +5,8 @@ add this line to the `/etc/sudoers` file:
 
 Copy the service file to `/etc/systemd/system`
 
-run `systemctl daemon-reload`
+run `sudo systemctl daemon-reload`
+
+run `sudo systemctl enable plane-tracker-service.service`
+
+run `sudo systemctl start plane-tracker-service.service`
